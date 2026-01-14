@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: black;
+    text-align: center;
+}
+
+.main-container > *{
+    padding: 15px;
+    background-color: red;
+}
+
+.sidebar{
+    display: grid;
+    grid-column-start: 1;
+    grid-row: 1 / -1;
+    background-color: blue;
+    gap: 15px;
+    font-size: 30px
+}
+
+.header{
+    grid-column-start: 2;
+    background-color: ;
+}
+
+.interface{
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.link, .logo{
+    color: white;
+}
