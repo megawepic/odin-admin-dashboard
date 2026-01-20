@@ -15,13 +15,12 @@
 
 .main-container > *{
     padding: 15px;
-    background-color: red;
 }
 
 .sidebar{
     grid-column: 1;
     grid-row: 1 / -1;
-    background-color: blue;
+    background-color: #2171EB;
     display: flex;
     flex-direction: column;
     gap: 36px;
@@ -29,19 +28,13 @@
     font-size: 1rem;
 }
 
-.sidebar > * {
-    border: 2px solid black;
-}
-
 .header{
+    background-color: #ffffff;
+    position: relative;
     grid-column-start: 2;
     display: grid;
     grid-template-rows: auto auto;
-}
-
-.header > div {
-    border: 1px solid black;
-    padding: 15px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .searchbar{
@@ -56,20 +49,12 @@
     height: 24px;
     width: 24px;
     background: none;
-    border: none;
-    cursor: pointer;
 }
 
 .bell-btn{
     height: 24px;
     width: 24px;
     background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.search-btn :active{
-    transform: scale(0.92);
 }
 
 .search{
@@ -101,8 +86,13 @@
     padding: 8px 16px;
     border-radius: 10px;
     border: none;
-    background-color: blue;
+    background-color: #354AEB;
     color: white;
+}
+
+.actions{
+    display: flex;
+    gap: 16px;
 }
 
 .hi-user{
@@ -113,9 +103,8 @@
     display: grid;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: green;
-    border: 2px dashed black;
     grid-template-columns: 2fr 1fr;
+    background-color: #b7bdc6;
 }
 
 .showcase{
@@ -148,6 +137,7 @@
     background-color: white;
     border-left: 5px solid rgba(255, 255, 0, 0.737);
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .announcements{
@@ -171,11 +161,13 @@
 
 .announcement-cards{
     grid-row: 2 / 3;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .trending-cards{
     grid-row: 4 / 5;
     gap: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .post{
@@ -195,7 +187,18 @@
 
 input{
     font-size: 1rem;
-    width: 10rem;
+    width: 30rem;
     border-radius: 10px;
+    padding: 6px 12px;
     border: none;
+    background-color: #e5e7eb;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.94);
 }
