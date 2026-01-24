@@ -162,7 +162,9 @@
 .card {
     display: flex;
     flex-direction: column;
+    position: relative;
     padding: 30px;
+    padding-bottom: 56px;
     background-color: white;
     border-left: 8px solid #f59e0b;
     border-radius: 10px;
@@ -171,6 +173,22 @@
 
 .card > p{
     color: grey;
+}
+
+.action-card{
+    position: absolute;
+    display: flex;
+    gap: 18px;
+    bottom: 18px;
+    right: 18px;
+}
+
+.action-card > button{
+    background: none;
+}
+
+.action-card > button > img{
+    height: 30px;
 }
 
 .announcements{
