@@ -24,7 +24,7 @@
     background-color: #2171EB;
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 28px;
     padding: 15px;
     font-size: 1rem;
 }
@@ -35,6 +35,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+    margin-bottom: 0.5rem;
 }
 
 .dashboard img{
@@ -47,6 +48,7 @@
     margin-left: 25%;
     gap: 8px;
 }
+
 .link img{
     height: 1.75rem;
 }
@@ -54,6 +56,11 @@
 .link a{
     color: white;
     text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.community{
+    margin-bottom: 60px;
 }
 
 .header{
@@ -107,8 +114,10 @@
 
 .greeting{
     display: flex;
+    align-items: center;
     gap: 15px;
 }
+
 
 .actions > button{
     font-size:16px;
@@ -124,8 +133,9 @@
     gap: 16px;
 }
 
-.hi-user{
-    font-size:20px;
+.hi-user :last-child{
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .interface{
